@@ -1,4 +1,4 @@
-# Bar database
+# Bar network database
 
 This is my Postgresql database project for university classes.
 
