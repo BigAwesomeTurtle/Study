@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dealer_desk"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/table"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/dealer_card_1"
+            style="@style/card_style" />
+
+        <ImageView
+            android:id="@+id/dealer_card_2"
+            style="@style/card_style" />
+
+        <ImageView
+            android:id="@+id/dealer_card_3"
+            style="@style/card_style" />
+
+        <ImageView
+            android:id="@+id/dealer_card_4"
+            style="@style/card_style" />
+
+        <ImageView
+            android:id="@+id/dealer_card_5"
+            style="@style/card_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player_desk"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/table"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dealer_desk">
+
+        <ImageView
+            android:id="@+id/player_card_1"
+            style="@style/card_style" />
+
+        <ImageView
+            android:id="@+id/player_card_2"
+            style="@style/card_style" />
+
+        <ImageView
+            android:id="@+id/player_card_3"
+            style="@style/card_style" />
+
+        <ImageView
+            android:id="@+id/player_card_4"
+            style="@style/card_style" />
+
+        <ImageView
+            android:id="@+id/player_card_5"
+            style="@style/card_style" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/curr_dealer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dealer_desk" />
+
+    <TextView
+        android:id="@+id/curr_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dealer_desk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

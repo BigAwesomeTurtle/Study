@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="org.bigawesometurtle.lab3_5_final.Fragment1"
+        android:label="Fragment1"
+        tools:layout="@layout/frag_1">
+        <action
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2" />
+        <action
+            android:id="@+id/action_fragment1_to_activityAbout"
+            app:destination="@id/activityAbout" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="org.bigawesometurtle.lab3_5_final.Fragment2"
+        android:label="Fragment2"
+        tools:layout="@layout/frag_2">
+        <action
+            android:id="@+id/action_fragment2_to_fragment1"
+            app:destination="@id/fragment1" />
+        <action
+            android:id="@+id/action_fragment2_to_fragment3"
+            app:destination="@id/fragment3" />
+        <action
+            android:id="@+id/action_fragment2_to_activityAbout"
+            app:destination="@id/activityAbout" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="org.bigawesometurtle.lab3_5_final.Fragment3"
+        android:label="Fragment3"
+        tools:layout="@layout/frag_3">
+        <action
+            android:id="@+id/action_fragment3_to_fragment2"
+            app:destination="@id/fragment2" />
+        <action
+            android:id="@+id/action_fragment3_to_fragment1"
+            app:destination="@id/fragment1" />
+        <action
+            android:id="@+id/action_fragment3_to_activityAbout"
+            app:destination="@id/activityAbout" />
+    </fragment>
+    <activity
+        android:id="@+id/activityAbout"
+        android:name="org.bigawesometurtle.lab3_5_final.ActivityAbout"
+        android:label="ActivityAbout"
+        tools:layout="@layout/activity_about" />
+</navigation>

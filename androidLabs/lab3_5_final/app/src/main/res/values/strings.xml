@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lab3_5</string>
+    <string name="to_first">to first</string>
+    <string name="to_second">to second</string>
+    <string name="to_third">to third</string>
+    <string name="activity_1">Activity 1</string>
+    <string name="activity_2">Activity 2</string>
+    <string name="activity_3">Activity 3</string>
+    <string name="about">About</string>
+    <string name="to_second_with_no_history">to second with no history</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
