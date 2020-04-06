@@ -1,0 +1,18 @@
+#!/bin/bash
+counter=1
+FileCounter1=0
+FileCounter2=1
+while [ $FileCounter1 -ne $FileCounter2 ]
+do
+	FileCounter1=$FileCounter2
+	cp -R ~/lab_2/dir_for_dirs "$counter"
+	FileCounter2=(`ls | wc -l`)
+	counter=$(($counter + 1))
+done
+while [ $counter -ne 0 ]
+do
+	rm -r "$counter"
+	counter=$(($counter -1))
+done
+echo "$FileCounter1"
+echo "$FileCounter2"

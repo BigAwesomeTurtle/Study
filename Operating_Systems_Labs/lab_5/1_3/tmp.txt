@@ -1,0 +1,3 @@
+C:\Windows\System32\notepad.exe C:\lab_5\1_3\Read_me.txt
+C:\Windows\System32\does_not_exist.exe
+C:\Windows\System32\calc.exe

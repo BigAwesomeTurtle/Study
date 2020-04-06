@@ -1,0 +1,2 @@
+C:\Windows\System32\notepad.exe C:\lab_5\1_2\Read_me.txt
+C:\Windows\System32\calc.exe

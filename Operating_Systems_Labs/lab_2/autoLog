@@ -1,0 +1,15 @@
+	#!/bin/bash
+	set -o history
+	while true
+	do
+		PS1=$(whoami)@$(hostname):$(pwd)$
+		echo -n "$PS1 " >>Report.txt
+		echo -n "$PS1 "
+		read command
+		result=`eval $command`
+		history -s $command
+		echo "$command" >> Report.txt
+		echo "$result"
+		echo "$result" >> Report.txt
+		echo "" >> Report.txt
+	done

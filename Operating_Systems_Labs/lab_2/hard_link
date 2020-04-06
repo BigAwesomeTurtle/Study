@@ -1,0 +1,4 @@
+#!/bin/bash
+b='ls -li $1 | cut -d  " " -f 1'
+c='ls -R -li / 2 > /dev/null | grep -E "$b"'
+echo  "$c"

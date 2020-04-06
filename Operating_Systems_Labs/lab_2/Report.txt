@@ -1,0 +1,180 @@
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ echo > script_file_type
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls -R -l /dev  | sort -d | uniq -wl > $
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ la
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+$
+aaa
+autoLog
+Report.txt
+script_file_type
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls -R -l /dev  | sort -d | uniq -w1 > file_1
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ echo > hard_link
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls -R -l /dev  | sort -d | uniq -w1
+
+brw-rw----  1 root disk      8,   0 Oct  2 14:14 sda
+c--------- 1 root root   5, 2 Oct  2 14:14 ptmx
+/dev:
+drwxrwxrwt  2 root root          40 Oct  2 14:14 mqueue
+lrwxrwxrwx 1 root root 10 Oct  2 14:14 1:9 -> ../urandom
+total 0
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ chmod +x script_file_type
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ mv harl_link script_hard_link
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ./script_file_type
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ./script_fyle_type file_1
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ./script_file_type file_1
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ chmod +x script_hard_link
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ./script_hard_link
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ./script_hard_link file_2
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ chmod +x script_hard_link
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ./script_hard_link file_2
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ./script_hard_link /
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ cd ..
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ cd
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ cd ..
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls ss
+
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ asdf@BigAwesomeTurtle:/home/asdf/lab_2$ ls
+autoLog
+file_1
+hard_link
+Report.txt
+script_file_type
+script_hard_link
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ cat file_1
+
+brw-rw----  1 root disk      8,   0 Oct  2 14:14 sda
+c--------- 1 root root   5, 2 Oct  2 14:14 ptmx
+/dev:
+drwxrwxrwt  2 root root          40 Oct  2 14:14 mqueue
+lrwxrwxrwx 1 root root 10 Oct  2 14:14 1:9 -> ../urandom
+total 0
+
+asdf@BigAwesomeTurtle:/home/asdf/lab_2$ 

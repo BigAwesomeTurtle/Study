@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -R -l /dev  | sort -d | uniq -w1 > $1

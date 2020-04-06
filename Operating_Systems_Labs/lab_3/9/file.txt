@@ -1,0 +1,51 @@
+  PID TTY      STAT   TIME COMMAND
+  644 ?        Ss     0:00 /bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xserverrc
+  672 ?        Ss     0:00  \_ /usr/bin/ssh-agent x-session-manager
+  682 ?        Sl     0:03  \_ xfce4-session
+  697 ?        S      0:43      \_ xfwm4 --display :0.0 --sm-client-id 23d0ca590-df7a-4ac2-873c-6ead021fd190
+  701 ?        Sl     0:23      \_ xfce4-panel --display :0.0 --sm-client-id 2a3345f91-4103-4cfc-a333-69b46082fbfc
+  857 ?        S      0:00      |   \_ /usr/lib/i386-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/i386-linux-gnu/xfce4/panel/plugins/libsystray.so 19 10485809 systray Notification Area Area where notification icons appear
+  860 ?        Sl     0:06      |   \_ /usr/lib/i386-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/i386-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 24 10485810 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display
+  861 ?        S      0:00      |   \_ /usr/lib/i386-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/i386-linux-gnu/xfce4/panel/plugins/libactions.so 20 10485811 actions Action Buttons Log out, lock or other system actions
+  862 ?        Sl     0:22      |   \_ /usr/lib/i386-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/i386-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 2 10485812 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system
+  704 ?        Sl     0:19      \_ Thunar --sm-client-id 22a8fc8b7-8c79-44df-a673-a522703b9f35 --daemon
+  736 ?        Sl     0:11      \_ xfdesktop --display :0.0 --sm-client-id 2db8e108c-bca8-4213-a4c7-857579757180
+  748 ?        Sl    11:08      \_ /usr/lib/firefox-esr/firefox-esr --sm-client-id 2a1ba9cda-65ba-430a-bfcc-948635451308
+  918 ?        Sl     0:34      |   \_ /usr/lib/firefox-esr/firefox-esr -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 185158 -parentBuildID 20191022215001 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appdir /usr/lib/firefox-esr/browser 748 true tab
+  997 ?        Sl     0:20      |   \_ /usr/lib/firefox-esr/firefox-esr -contentproc -childID 3 -isForBrowser -prefsLen 6094 -prefMapSize 185158 -parentBuildID 20191022215001 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appdir /usr/lib/firefox-esr/browser 748 true tab
+ 1077 ?        Sl     9:27      |   \_ /usr/lib/firefox-esr/firefox-esr -contentproc -childID 5 -isForBrowser -prefsLen 7355 -prefMapSize 185158 -parentBuildID 20191022215001 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appdir /usr/lib/firefox-esr/browser 748 true tab
+ 1105 ?        Sl     1:51      |   \_ /usr/lib/firefox-esr/firefox-esr -contentproc -childID 6 -isForBrowser -prefsLen 7355 -prefMapSize 185158 -parentBuildID 20191022215001 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appdir /usr/lib/firefox-esr/browser 748 true tab
+17600 ?        Sl     0:01      |   \_ /usr/lib/firefox-esr/firefox-esr -contentproc -childID 9 -isForBrowser -prefsLen 8847 -prefMapSize 185158 -parentBuildID 20191022215001 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appdir /usr/lib/firefox-esr/browser 748 true tab
+  750 ?        Sl     0:24      \_ xfce4-terminal --geometry=100x28 --display :0.0 --role=xfce4-terminal-1574529129-1417824128 --show-menubar --show-borders --hide-toolbar --active-tab --working-directory /home/asdf/Documents/yacc/ind3 --sm-client-id 274c6962e-29a6-4832-8c0b-2cfd3b23c61d
+  869 ?        Zs     0:00      |   \_ [bash] <defunct>
+17426 pts/1    Ss     0:00      |   \_ bash
+17434 pts/1    S+     0:00      |       \_ bash
+18090 pts/1    S+     0:00      |           \_ ./father.out
+18092 pts/1    S+     0:00      |           |   \_ son1.out
+18093 pts/1    S+     0:00      |           |   \_ son2.out
+18094 pts/1    S+     0:00      |           |   \_ son3.out
+18095 pts/1    S+     0:00      |           |   \_ sh -c ps xf > file.txt
+18096 pts/1    R+     0:00      |           |       \_ ps xf
+18091 pts/1    S+     0:00      |           \_ tee -a /home/asdf/logfile_3.txt
+  801 ?        Sl     0:00      \_ /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+  805 ?        Sl     0:00      \_ light-locker
+  820 ?        Sl     0:06      \_ nm-applet
+17461 ?        Sl     2:33 /opt/sublime_text/sublime_text /home/asdf/lab_3/5/file.txt
+17475 ?        Sl     0:04  \_ /opt/sublime_text/plugin_host 17461 --auto-shell-env
+  757 ?        Ssl    0:01 xfce4-power-manager --restart --sm-client-id 242f9b279-8997-470b-986c-957c91b8d4b0
+  702 ?        Ssl    0:00 xfsettingsd --display :0.0 --sm-client-id 23a012914-4e0f-4a17-9d4b-bd66e9755221
+  626 ?        Ss     0:00 /lib/systemd/systemd --user
+  627 ?        S      0:00  \_ (sd-pam)
+  637 ?        S<sl   0:07  \_ /usr/bin/pulseaudio --daemonize=no
+  643 ?        Ss     0:06  \_ /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  686 ?        Sl     0:00  \_ /usr/lib/i386-linux-gnu/xfce4/xfconf/xfconfd
+  695 ?        SLs    0:00  \_ /usr/bin/gpg-agent --supervised
+  712 ?        Ssl    0:00  \_ /usr/lib/gvfs/gvfsd
+  825 ?        Sl     0:08  |   \_ /usr/lib/gvfs/gvfsd-trash --spawner :1.12 /org/gtk/gvfs/exec_spaw/0
+  720 ?        Ssl    0:00  \_ /usr/lib/at-spi2-core/at-spi-bus-launcher
+  725 ?        S      0:00  |   \_ /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+  749 ?        Ssl    0:00  \_ /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+  765 ?        Ssl    0:00  \_ /usr/lib/i386-linux-gnu/xfce4/notifyd/xfce4-notifyd
+  773 ?        Sl     0:01  \_ /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+  819 ?        Sl     0:00  \_ /usr/lib/dconf/dconf-service
+  853 ?        Ssl    0:00  \_ /usr/lib/gvfs/gvfsd-metadata

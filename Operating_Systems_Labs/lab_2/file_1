@@ -1,0 +1,7 @@
+
+brw-rw----  1 root disk      8,   0 Oct  2 14:14 sda
+c--------- 1 root root   5, 2 Oct  2 14:14 ptmx
+/dev:
+drwxrwxrwt  2 root root          40 Oct  2 14:14 mqueue
+lrwxrwxrwx 1 root root 10 Oct  2 14:14 1:9 -> ../urandom
+total 0

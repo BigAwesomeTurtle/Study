@@ -1,0 +1,9 @@
+ PPID   PID  PGID   SID TTY      TPGID STAT   UID   TIME COMMAND
+  750 17426 17426 17426 pts/1    17434 Ss    1000   0:00      |   \_ bash
+17426 17434 17434 17426 pts/1    17434 S+    1000   0:00      |       \_ bash
+17434 20497 17434 17426 pts/1    17434 S+    1000   0:00      |           \_ ./father.out output.txt
+20497 20499 17434 17426 pts/1    17434 Z+    1000   0:00      |           |   \_ [son.out] <defunct>
+20497 20500 17434 17426 pts/1    17434 S+    1000   0:00      |           |   \_ sh -c ps xjf | grep "STAT\|17426" > output.txt
+20500 20501 17434 17426 pts/1    17434 R+    1000   0:00      |           |       \_ ps xjf
+20500 20502 17434 17426 pts/1    17434 S+    1000   0:00      |           |       \_ grep STAT\|17426
+17434 20498 17434 17426 pts/1    17434 S+    1000   0:00      |           \_ tee -a /home/asdf/logfile_3.txt

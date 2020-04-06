@@ -1,0 +1,93 @@
+  PID TTY      STAT   TIME COMMAND
+18836 pts/1    S+     0:00 sudo ./father.out
+18838 pts/1    S+     0:00  \_ ./father.out
+18839 pts/1    Z+     0:00      \_ [son1.out] <defunct>
+18840 pts/1    Z+     0:00      \_ [son2.out] <defunct>
+18841 pts/1    S+     0:00      \_ sh -c ps xf > file.txt
+18844 pts/1    R+     0:00          \_ ps xf
+    2 ?        S      0:00 [kthreadd]
+    3 ?        I<     0:00  \_ [rcu_gp]
+    4 ?        I<     0:00  \_ [rcu_par_gp]
+    6 ?        I<     0:00  \_ [kworker/0:0H-kblockd]
+    8 ?        I<     0:00  \_ [mm_percpu_wq]
+    9 ?        S      0:00  \_ [ksoftirqd/0]
+   10 ?        I      0:05  \_ [rcu_sched]
+   11 ?        S      0:00  \_ [migration/0]
+   13 ?        S      0:00  \_ [cpuhp/0]
+   14 ?        S      0:00  \_ [cpuhp/1]
+   15 ?        S      0:00  \_ [migration/1]
+   16 ?        S      0:00  \_ [ksoftirqd/1]
+   18 ?        I<     0:00  \_ [kworker/1:0H-kblockd]
+   19 ?        S      0:00  \_ [cpuhp/2]
+   20 ?        S      0:00  \_ [migration/2]
+   21 ?        S      0:00  \_ [ksoftirqd/2]
+   23 ?        I<     0:00  \_ [kworker/2:0H-kblockd]
+   24 ?        S      0:00  \_ [cpuhp/3]
+   25 ?        S      0:00  \_ [migration/3]
+   26 ?        S      0:00  \_ [ksoftirqd/3]
+   28 ?        I<     0:00  \_ [kworker/3:0H-kblockd]
+   29 ?        S      0:00  \_ [kdevtmpfs]
+   30 ?        I<     0:00  \_ [netns]
+   31 ?        S      0:00  \_ [kauditd]
+   32 ?        S      0:00  \_ [khungtaskd]
+   33 ?        S      0:00  \_ [oom_reaper]
+   34 ?        I<     0:00  \_ [writeback]
+   35 ?        S      0:00  \_ [kcompactd0]
+   36 ?        SN     0:00  \_ [ksmd]
+   37 ?        SN     0:00  \_ [khugepaged]
+   38 ?        I<     0:00  \_ [crypto]
+   81 ?        I<     0:00  \_ [kintegrityd]
+   82 ?        I<     0:00  \_ [kblockd]
+   83 ?        I<     0:00  \_ [edac-poller]
+   84 ?        I<     0:00  \_ [devfreq_wq]
+   85 ?        S      0:03  \_ [kswapd0]
+   86 ?        I<     0:00  \_ [kworker/u9:0-hci0]
+   87 ?        I<     0:00  \_ [kthrotld]
+   88 ?        I<     0:00  \_ [acpi_thermal_pm]
+   89 ?        I<     0:00  \_ [ipv6_addrconf]
+  101 ?        I<     0:00  \_ [kstrp]
+  150 ?        I<     0:00  \_ [ata_sff]
+  151 ?        S      0:00  \_ [scsi_eh_0]
+  152 ?        I<     0:00  \_ [scsi_tmf_0]
+  153 ?        S      0:00  \_ [scsi_eh_1]
+  154 ?        I<     0:00  \_ [scsi_tmf_1]
+  155 ?        S      0:00  \_ [scsi_eh_2]
+  156 ?        I<     0:00  \_ [scsi_tmf_2]
+  157 ?        S      0:00  \_ [scsi_eh_3]
+  158 ?        I<     0:00  \_ [scsi_tmf_3]
+  165 ?        I<     0:00  \_ [kworker/2:1H-kblockd]
+  212 ?        I<     0:00  \_ [kworker/3:1H-kblockd]
+  213 ?        S      0:05  \_ [jbd2/sda1-8]
+  214 ?        I<     0:00  \_ [ext4-rsv-conver]
+  226 ?        I<     0:00  \_ [kworker/1:1H-kblockd]
+  231 ?        I<     0:00  \_ [kworker/0:1H-kblockd]
+  355 ?        I<     0:00  \_ [cfg80211]
+17837 ?        I      0:00  \_ [kworker/3:1-events]
+18007 ?        I      0:07  \_ [kworker/1:0-events]
+18154 ?        I      0:00  \_ [kworker/1:1-events]
+18202 ?        I      0:08  \_ [kworker/3:0-events]
+18203 ?        I      0:08  \_ [kworker/0:1-events]
+18290 ?        I<     0:00  \_ [kworker/u9:1-hci0]
+18535 ?        I      0:00  \_ [kworker/u8:1-events_unbound]
+18544 ?        I      0:02  \_ [kworker/2:2-events]
+18561 ?        I      0:00  \_ [kworker/0:2-events]
+18612 ?        I      0:03  \_ [kworker/2:1-events]
+18754 ?        I      0:00  \_ [kworker/u8:2-events_unbound]
+18782 ?        I      0:00  \_ [kworker/u8:0]
+    1 ?        Ss     0:11 /lib/systemd/systemd --system --deserialize 29
+  305 ?        Ss     0:07 /usr/sbin/haveged --Foreground --verbose=1 -w 1024
+  435 ?        Ssl    0:00 /usr/sbin/ModemManager --filter-policy=strict
+  436 ?        Ss     0:00 /usr/sbin/cron -f
+  438 ?        Ssl    0:08 /usr/sbin/NetworkManager --no-daemon
+  441 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+  453 ?        Ss     0:01 /lib/systemd/systemd-logind
+  462 ?        Ssl    0:03 /usr/lib/policykit-1/polkitd --no-debug
+  476 ?        SLsl   0:00 /usr/sbin/lightdm
+  483 tty7     Ssl+   7:12  \_ /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+  621 ?        Sl     0:00  \_ lightdm --session-child 14 23
+  484 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+  495 ?        Ss     0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+  708 ?        Ssl    0:05 /usr/lib/upower/upowerd
+  756 ?        Ssl    0:05 /usr/lib/udisks2/udisksd
+ 3919 ?        Ss     0:00 /lib/systemd/systemd-journald
+ 4589 ?        Ss     0:00 /lib/systemd/systemd-udevd
