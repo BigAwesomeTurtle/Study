@@ -1,0 +1,33 @@
+IV :	 4
+XX :	 20
+This roman number is not correct: IIIIV
+ Too much identical letters in a row
+LXX :	 70
+It's not a roman number: AABBbdii
+It's not a roman number: iiiv
+ Use capital letters
+This roman number is not correct: XXL
+ Small value befor big
+It's not a roman number: AABBbdV
+It's not a roman number: asas9171
+ Input contains decimal numbers
+It's not a roman number: 999
+ Input contains decimal numbers
+DCDXCIX :	 999
+This roman number is not correct: VC
+ Small value befor big
+This roman number is not correct: LC
+ Small value befor big
+This roman number is not correct: XXXX
+ Too much identical letters in a row
+It's not a roman number: clvi
+ Use capital letters
+It's not a roman number: As91G
+ Input contains decimal numbers
+CCCXXII :	 322
+It's not a roman number: XX5I
+ Input contains decimal numbers
+It's not a roman number: zkhvbalkbfqef
+XCIX :	 99
+It's not a roman number: ./^&*%sfa@#
+CD :	 400

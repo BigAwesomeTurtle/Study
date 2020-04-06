@@ -1,0 +1,59 @@
+L:1
+    mov ax, 4
+    add ax, 15
+    sub ax, 10
+    mov a0, var
+    mul a0, 100
+    add ax, a0
+    mov bx, 0
+    cmp ax, bx
+    je L2
+    mov id2, id15
+    jmp L3
+L:2
+    mov id1, id3
+L:3
+    mov ax, 5
+    mov a0, 3
+    div a0, 4
+    mul a0, asd
+    sub ax, a0
+    mov bx, 0
+    cmp ax, bx
+    je L4
+    mov a0, id2
+    mul a0, 4
+    mov ax, a0
+    mov id5, ax
+    mov id3, 2
+    mov a0, 4
+    mul a0, 2
+    mov ax, a0
+    mov a1, 100
+    div a1, id3
+    sub ax, a1
+    mov id2, ax
+L:4
+    mov a0, 123
+    mul a0, s1
+    div a0, 111
+    mov ax, a0
+    mov a1, 433
+    mul a1, s2
+    mul a1, s3
+    div a1, s4
+    add ax, a1
+    add ax, 54
+    mov bx, 0
+    cmp ax, bx
+    je L5
+    jmp L6
+L:5
+    mov ax, 4
+    add ax, 15
+    sub ax, 10
+    mov a0, id7
+    mul a0, 100
+    add ax, a0
+    mov asdf, ax
+L:6
