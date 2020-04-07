@@ -20,4 +20,4 @@ A markup file that creates all the necessary GUI elements and defines their appe
 	- **Controller.java:**
 Controller class for sample.fxml file. Used for application reaction to user actions. Using the **playMusic** method defined in the **Sound.java**  class, it starts playing a specific sound file when you click a button in the application or on the keyboard.
 ### Appearance of the program
-<img src="Piano_Simulator/screens/screen.png" width="700">
+<img src="/screens/screen.png" width="700">
