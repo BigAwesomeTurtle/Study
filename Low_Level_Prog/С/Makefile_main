@@ -1,0 +1,17 @@
+.PHONY: all clean
+SRC= main.c  
+
+CFLAGS= -Wall -Wextra -pedantic -std=c11
+CFLAGS+= -O1
+LIBS= librb_tree.a
+MYPROGNAME= Main
+RM= del
+all: $(MYPROGNAME)
+
+clean:
+	$(RM)  $(MYPROGNAME)
+
+
+
+$(MYPROGNAME): $(SRC)
+	gcc $(CFLAGS) -o $@ $^ $(LIBS)

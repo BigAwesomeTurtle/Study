@@ -1,0 +1,20 @@
+Input file:
+10(0) 
+6(1) 45(0) 
+4(0) 8(0) null null 
+0(1) null null null null null 
+
+Adding 30:
+10(0) 
+6(1) 45(0) 
+4(0) 8(0) 30(1) null 
+0(1) null null null null null null 
+
+Removing 6:
+10(0) 
+4(1) 45(0) 
+0(0) 8(0) 30(1) null 
+
+
+Finding 45:Found!
+Finding 121:No...
