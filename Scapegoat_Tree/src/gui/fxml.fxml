@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.Controller">
+    <Label fx:id="treeText" alignment="TOP_LEFT" layoutX="-2.0" layoutY="-1.0" prefHeight="400.0" prefWidth="334.0"
+           text="                                                                                                    "/>
+    <Pane layoutX="334.0" prefHeight="400.0" prefWidth="284.0">
+        <TextField fx:id="removeT" layoutX="14.0" layoutY="359.0" prefHeight="27.0" prefWidth="136.0"/>
+        <TextField fx:id="addT" layoutX="14.0" layoutY="323.0" prefHeight="27.0" prefWidth="136.0"/>
+        <TextField fx:id="findT" layoutX="14.0" layoutY="285.0" prefHeight="27.0" prefWidth="136.0"/>
+        <Button id="findB" layoutX="160.0" layoutY="285.0" mnemonicParsing="false"
+                onAction="#handleButtonAction" prefHeight="27.0" prefWidth="73.0" text="Find"/>
+        <Button id="addB" layoutX="160.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleButtonAction"
+                prefHeight="27.0" prefWidth="73.0" text="Add"/>
+        <Button id="removeB" layoutX="160.0" layoutY="359.0" mnemonicParsing="false"
+                onAction="#handleButtonAction" prefHeight="27.0" prefWidth="73.0" text="Remove"/>
+        <Button id="containsB" layoutX="160.0" layoutY="211.0" mnemonicParsing="false"
+                onAction="#handleButtonAction" prefHeight="27.0" prefWidth="73.0" text="Contains"/>
+        <Button id="clear" layoutX="14.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleButtonAction"
+                prefHeight="27.0" prefWidth="219.0" text="Clear"/>
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="252.0" text="       ScapegoatTree"
+               textAlignment="CENTER">
+            <font>
+                <Font size="21.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="alphaT" layoutX="14.0" layoutY="247.0" prefHeight="27.0" prefWidth="136.0"/>
+        <Button id="alphaB" layoutX="160.0" layoutY="247.0" mnemonicParsing="false"
+                onAction="#handleButtonAction" prefHeight="27.0" prefWidth="73.0" text="Set alpha"/>
+        <TextField fx:id="containsT" layoutX="14.0" layoutY="211.0" prefHeight="27.0" prefWidth="136.0"/>
+    </Pane>
+</AnchorPane>
