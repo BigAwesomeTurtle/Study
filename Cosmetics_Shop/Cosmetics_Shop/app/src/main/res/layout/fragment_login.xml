@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDA6FA"
+    tools:context=".LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/loginLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/edit_background"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:hint="@string/login"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="21sp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/loginPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background"
+            android:drawableStart="@drawable/ic_pass"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="21sp"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/loginSignInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/loginSignUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:clickable="false"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+        <Button
+            android:id="@+id/loginWithoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:clickable="false"
+            android:text="@string/continue_without_account"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+</RelativeLayout>

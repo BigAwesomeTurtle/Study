@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDA6FA"
+    tools:context=".RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/signupNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/edit_background"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/signupSurnameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:hint="@string/surname"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/signupPhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/signupEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/signupLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:hint="@string/login"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/signupPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_background"
+            android:drawableStart="@drawable/ic_pass"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/signupRegisterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            android:clickable="false"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/signupBackBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_background"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
