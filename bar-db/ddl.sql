@@ -130,6 +130,8 @@ CREATE TABLE IF NOT EXISTS public.promotion (
 
 CREATE TABLE IF NOT EXISTS public.regular_customer ( 
   id SERIAL NOT NULL,
+  login VARCHAR(20) UNIQUE NOT NULL ,
+  password VARCHAR(512) NOT NULL,
   name VARCHAR(50) NOT NULL,
   telephone VARCHAR(15) NULL,
   discount NUMERIC(4,2) DEFAULT 0.00 NOT NULL,
@@ -137,11 +139,12 @@ CREATE TABLE IF NOT EXISTS public.regular_customer (
   favourite_bar_id INT NULL,
   PRIMARY KEY (id),
 
-  CONSTRAINT regular_customer_favourite_bar_id_foreign
+  CONSTRAINT regular_customer_id_foreign
   FOREIGN KEY (favourite_bar_id)
   REFERENCES public.bar (id)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION
 );
+
 
 COMMIT;

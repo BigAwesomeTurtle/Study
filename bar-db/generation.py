@@ -9,8 +9,8 @@ import math
 connection=psycopg2.connect(dbname='bar_db', user='bar_user', password='barbar', host='127.0.0.1' )
 cursor=connection.cursor()
 
-addresses=open("resourses/streets.txt","r").readlines()
-names=open("resourses/names.txt","r").readlines()
+addresses=open("resourses/streets.txt","r",encoding='utf-8').readlines()
+names=open("resourses/names.txt","r",encoding='utf-8').readlines()
 
 opening_date=dicts.opening_date
 
@@ -319,9 +319,9 @@ def regular_customer_generation(customer_amount, bar_args=0):
 			random_bar=random.randint(1, bar_amount)
 		else:
 			random_bar=random.choice(bar_args)
-		insert_regular=insert_regular + "( "+"\'"+random.choice(names)+"\'"+", "+generate_phone()+", "+str(random.randint(1,20)/100)+", "+str(random.randint(1,10000))+", "+str(random_bar)+"),"
+		insert_regular=insert_regular + "( "+"\'"+random.choice(names)+"\'"+", "+ str(i)+", "+"\'"+"c785674868f9bb555c26d09e02509056f28a8bfd1b8dc296978d4db523778d2842c811f3722633520abdc8d6d25989d8536d168b666acce6cda38f759a8a1949"+"\'"+", "+generate_phone()+", "+str(random.randint(1,20)/100)+", "+str(random.randint(1,10000))+", "+str(random_bar)+"),"
 
-	exec_str='INSERT INTO public.regular_customer (name, telephone, discount, points, favourite_bar_id) VALUES {}'.format(insert_regular)
+	exec_str='INSERT INTO public.regular_customer (name, login, password, telephone, discount, points, favourite_bar_id) VALUES {}'.format(insert_regular)
 	cursor.execute(exec_str[:len(exec_str)-1])
 
 def menu_category_generation():
@@ -337,7 +337,7 @@ def menu_item_generation():
 	insert_item=""
 	for i in range(0,len(menu_list)):
 		for elem in menu_list[i]:
-			insert_item=insert_item + "( "+"\'"+elem["name"]+"\'"+", "+"\'"+elem["description"]+"\'"+", "+ str(elem["weight"])+", "+str(i+1)+", "+str(elem["recomended_price"])+"),"
+			insert_item=insert_item + "( "+"\'"+elem["name"]+"\'"+", "+"\'"+elem["description"]+"\'"+", "+ "\'"+str(elem["weight"])+"\'"+", "+str(i+1)+", "+str(elem["recomended_price"])+"),"
 	exec_str='INSERT INTO public.menu_item ( name, description, weight, category_id, recomended_price) VALUES {}'.format(insert_item)
 	cursor.execute(exec_str[:len(exec_str)-1])
 
